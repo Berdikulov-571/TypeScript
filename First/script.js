@@ -110,3 +110,12 @@
 // type Employee = Person & {
 //     Address : string
 // }
+// Uzgartirish mumkin mas
+// const people: ReadonlyArray<string> = ["Sanjarbek","Alisher","Muhammad"];
+// const p1 : string[] = ["sanjarbek","Alisher","Almatov"];
+// let names : Array<string> = ["Sanjarbek","Alisher","Almatov"];
+// names[0] = "jonibek";
+// Tuple
+var user = ["Sanjarbek", 17];
+var obj = ["Sanjarbek", 2, 3, 4, 5, 6];
+console.log(obj);
