@@ -6,6 +6,7 @@
 // }
 
 
+
 // function GetFullInfo(user : User) : string
 // {
 //     return `FirstName : ${user.firstName}\nLastName: ${user.lastName}\nPhoneNumber: ${user.phoneNumber}\nAge: ${user.Age}`;
@@ -80,9 +81,6 @@
 
 
 
-
-
-
 // Enum
 // enum Dictionary{
 //     Rus,
@@ -99,6 +97,70 @@
 
 
 // Tuple
-let array : [string,number,boolean] = ["sanjarbek",1,true];
+// let array : [string,number,boolean] = ["sanjarbek",1,true];
 
-console.log(array);
+// console.log(array);
+
+
+
+// Generics
+// function loggerTime<T>(object: T) : T {
+//     console.log(new Date());
+//     return object;
+// }
+
+// let number : number =  loggerTime<number>(10);
+
+// let text  = loggerTime<string>("Sanjarbek");
+
+// let boolean : boolean = loggerTime<boolean>(true);
+
+// console.log(number);
+// console.log(text);
+// console.log(boolean);
+
+
+
+
+
+// Default value
+
+// function Info(firstName : string, lastName : string="Berdikulov") : void
+// {
+//     console.log(`${firstName} ${lastName}`);
+// }
+
+// Info("Alisher","Almatov");
+// Info("Sultan");
+
+
+
+
+
+// let person : {
+//     name : string,
+//     age? : number
+// }
+
+// person = {name : "Sanjarbek",age : 30};
+
+
+// let person : {
+//     name : string,
+//     surname : string
+// } = {name : "Sanjarbek",surname : "Alisher"};
+
+// console.log(person.name);
+// console.log(person.surname);
+
+
+
+
+type id = number | string;
+
+let myID : id = 132;
+
+let myId1 : id = "Salom";
+
+console.log(myID);
+console.log(myId1);
