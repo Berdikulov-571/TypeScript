@@ -55,13 +55,16 @@
 // }
 // console.log(user.Address);
 // Enum
-var Dictionary;
-(function (Dictionary) {
-    Dictionary[Dictionary["Rus"] = 0] = "Rus";
-    Dictionary[Dictionary["Uzb"] = 1] = "Uzb";
-    Dictionary[Dictionary["Eng"] = 2] = "Eng";
-    Dictionary[Dictionary["Kril"] = 3] = "Kril";
-})(Dictionary || (Dictionary = {}));
-for (var i = 0; i < 4; i++) {
-    console.log(Dictionary[i]);
-}
+// enum Dictionary{
+//     Rus,
+//     Uzb,
+//     Eng,
+//     Kril
+// }
+// for(let i = 0; i < 4; i++)
+// {
+//     console.log(Dictionary[i]);
+// }
+// Tuple
+var array = ["sanjarbek", 1, true];
+console.log(array);
