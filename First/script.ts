@@ -98,3 +98,7 @@
 
 
 
+// Tuple
+let array : [string,number,boolean] = ["sanjarbek",1,true];
+
+console.log(array);
