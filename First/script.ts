@@ -83,4 +83,18 @@
 
 
 
+// Enum
+// enum Dictionary{
+//     Rus,
+//     Uzb,
+//     Eng,
+//     Kril
+// }
+
+// for(let i = 0; i < 4; i++)
+// {
+//     console.log(Dictionary[i]);
+// }
+
+
 
