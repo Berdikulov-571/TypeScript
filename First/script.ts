@@ -156,11 +156,24 @@
 
 
 
-type id = number | string;
+// type id = number | string;
 
-let myID : id = 132;
+// let myID : id = 132;
 
-let myId1 : id = "Salom";
+// let myId1 : id = "Salom";
 
-console.log(myID);
-console.log(myId1);
+// console.log(myID);
+// console.log(myId1);
+
+
+
+
+// Types
+// type Person = {
+//     firstName : string,
+//     lastName : string
+// }
+
+// type Employee = Person & {
+//     Address : string
+// }
