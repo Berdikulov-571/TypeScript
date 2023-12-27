@@ -2,14 +2,14 @@
 // {
 //     console.log(a + b);
 // }
-// Function return string
-function GetFullInfo(user) {
-    return "FirstName : ".concat(user.firstName, "\nLastName: ").concat(user.lastName, "\nPhoneNumber: ").concat(user.phoneNumber, "\nAge: ").concat(user.Age);
-}
-var user = {
-    firstName: "Sanajrbek",
+var person = {
+    firstName: "Sanjarbek",
     lastName: "Berdikulov",
     Age: 17,
-    phoneNumber: "+998900074272",
+    phoneNumber: "900074272",
+    address: "Bekobod",
 };
-console.log(GetFullInfo(user));
+function getPersonInfo(person) {
+    return "FirstName : ".concat(person.firstName, "\nLastName: ").concat(person.lastName, "\nPhoneNumber: ").concat(person.phoneNumber, "\nAge: ").concat(person.Age, "\nAddress: ").concat(person.address);
+}
+console.log(getPersonInfo(person));
