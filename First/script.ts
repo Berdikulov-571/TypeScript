@@ -204,18 +204,40 @@
 
 
 // Created class and function and take object
-class Person {
-    _firstName? : string;
-    _lastName? : string;
-    constructor(firstName : string, lastName : string) {
-        this._firstName = firstName;
-        this._lastName = lastName;
-    }
+// class Person {
+//     _firstName? : string;
+//     _lastName? : string;
+//     constructor(firstName : string, lastName : string) {
+//         this._firstName = firstName;
+//         this._lastName = lastName;
+//     }
 
-    GetFullInfo() : string
-    {
-        return `FirstName : ${this._firstName}\nLastName : ${this._lastName}`
-    }
-}
+//     GetFullInfo() : string
+//     {
+//         return `FirstName : ${this._firstName}\nLastName : ${this._lastName}`
+//     }
+// }
 
-let person : Person =  new Person("Sanjarbek","Berdikulov");
+// let person : Person =  new Person("Sanjarbek","Berdikulov");
+
+
+// let myInfo = person.GetFullInfo();
+
+// console.log(myInfo);
+
+
+
+
+// Implement
+// interface Adder 
+// {
+//     sum(x: number, y: number): number;
+// }
+  
+// class Calculator implements Adder 
+// {
+//     sum(a: number, b: number): number 
+//     {
+//       return a + b;
+//     }
+// }
