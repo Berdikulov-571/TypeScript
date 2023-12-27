@@ -1,20 +1,3 @@
-// function Sum(a : number, b : number) : void
-// {
-//     console.log(a + b);
-// }
-
-// let numArray : number[] = [3,4,65,11,6,7,2,34,6,8,9,10]
-// let stringArray : string[] = ['G','R','A','C','R','B','D']
-
-// numArray.sort((a,b) => a - b);
-// stringArray.sort();
-
-// console.log(numArray);
-// console.log(stringArray);
-
-
-
-
 // type User = {
 //     firstName : string,
 //     lastName : string,
@@ -42,29 +25,62 @@
 
 
 
-interface IUser {
-    firstName: string,
-    lastName: string,
-    phoneNumber: string,
-    Age: number
-}
+// interface IUser {
+//     firstName: string,
+//     lastName: string,
+//     phoneNumber: string,
+//     Age: number
+// }
 
-interface IPerson extends IUser {
-    address: string,
-}
+// interface IPerson extends IUser {
+//     address: string,
+// }
 
 
-let person: IPerson =
-{
-    firstName: "Sanjarbek",
-    lastName: "Berdikulov",
-    Age: 17,
-    phoneNumber: "900074272",
-    address: "Bekobod",
-}
+// let person: IPerson =
+// {
+//     firstName: "Sanjarbek",
+//     lastName: "Berdikulov",
+//     Age: 17,
+//     phoneNumber: "900074272",
+//     address: "Bekobod",
+// }
 
-function getPersonInfo(person: IPerson): string {
-    return `FirstName : ${person.firstName}\nLastName: ${person.lastName}\nPhoneNumber: ${person.phoneNumber}\nAge: ${person.Age}\nAddress: ${person.address}`;
-}
+// function getPersonInfo(person: IPerson): string {
+//     return `FirstName : ${person.firstName}\nLastName: ${person.lastName}\nPhoneNumber: ${person.phoneNumber}\nAge: ${person.Age}\nAddress: ${person.address}`;
+// }
 
-console.log(getPersonInfo(person));
+// console.log(getPersonInfo(person));
+
+
+
+
+// type Person = {
+//     firstName : string,
+//     lastName : string,
+//     phoneNumber: string,
+//     Age : number
+// }
+
+
+// type User = Person & {
+//     Address : string,
+// }
+
+
+// let user : User = {
+//     firstName: "Sanjarbek",
+//     lastName: "Berdikulov",
+//     Age: 17,
+//     phoneNumber: "900074272",
+//     Address: "Bekobod",
+// }
+
+// console.log(user.Address);
+
+
+
+
+
+
+
