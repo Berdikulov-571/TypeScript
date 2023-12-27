@@ -120,14 +120,30 @@
 // let obj: [string, ...number[]] = ["Sanjarbek", 2, 3, 4, 5, 6];
 // console.log(obj);
 // Created class and function and take object
-var Person = /** @class */ (function () {
-    function Person(firstName, lastName) {
-        this._firstName = firstName;
-        this._lastName = lastName;
-    }
-    Person.prototype.GetFullInfo = function () {
-        return "FirstName : ".concat(this._firstName, "\nLastName : ").concat(this._lastName);
-    };
-    return Person;
-}());
-var person = new Person("Sanjarbek", "Berdikulov");
+// class Person {
+//     _firstName? : string;
+//     _lastName? : string;
+//     constructor(firstName : string, lastName : string) {
+//         this._firstName = firstName;
+//         this._lastName = lastName;
+//     }
+//     GetFullInfo() : string
+//     {
+//         return `FirstName : ${this._firstName}\nLastName : ${this._lastName}`
+//     }
+// }
+// let person : Person =  new Person("Sanjarbek","Berdikulov");
+// let myInfo = person.GetFullInfo();
+// console.log(myInfo);
+// Implement
+// interface Adder 
+// {
+//     sum(x: number, y: number): number;
+// }
+// class Calculator implements Adder 
+// {
+//     sum(a: number, b: number): number 
+//     {
+//       return a + b;
+//     }
+// }
