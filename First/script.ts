@@ -194,8 +194,28 @@
 
 
 // Tuple
-let user : [string,number] = ["Sanjarbek",17];
+// let user: [string, number] = ["Sanjarbek", 17];
 
-let obj : [string, ...number[]] = ["Sanjarbek",2,3,4,5,6];
+// let obj: [string, ...number[]] = ["Sanjarbek", 2, 3, 4, 5, 6];
 
-console.log(obj);
+// console.log(obj);
+
+
+
+
+// Created class and function and take object
+class Person {
+    _firstName? : string;
+    _lastName? : string;
+    constructor(firstName : string, lastName : string) {
+        this._firstName = firstName;
+        this._lastName = lastName;
+    }
+
+    GetFullInfo() : string
+    {
+        return `FirstName : ${this._firstName}\nLastName : ${this._lastName}`
+    }
+}
+
+let person : Person =  new Person("Sanjarbek","Berdikulov");
