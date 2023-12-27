@@ -1,9 +1,15 @@
-function Sum(a, b) {
-    console.log(a + b);
+// function Sum(a : number, b : number) : void
+// {
+//     console.log(a + b);
+// }
+// Function return string
+function GetFullInfo(user) {
+    return "FirstName : ".concat(user.firstName, "\nLastName: ").concat(user.lastName, "\nPhoneNumber: ").concat(user.phoneNumber, "\nAge: ").concat(user.Age);
 }
-var numArray = [3, 4, 65, 11, 6, 7, 2, 34, 6, 8, 9, 10];
-var stringArray = ['G', 'R', 'A', 'C', 'R', 'B', 'D'];
-numArray.sort(function (a, b) { return a - b; });
-stringArray.sort();
-console.log(numArray);
-console.log(stringArray);
+var user = {
+    firstName: "Sanajrbek",
+    lastName: "Berdikulov",
+    Age: 17,
+    phoneNumber: "+998900074272",
+};
+console.log(GetFullInfo(user));
