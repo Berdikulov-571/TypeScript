@@ -15,25 +15,56 @@
 
 
 
-type User = {
-    firstName : string,
-    lastName : string,
+// type User = {
+//     firstName : string,
+//     lastName : string,
+//     phoneNumber: string,
+//     Age : number
+// }
+
+
+// function GetFullInfo(user : User) : string
+// {
+//     return `FirstName : ${user.firstName}\nLastName: ${user.lastName}\nPhoneNumber: ${user.phoneNumber}\nAge: ${user.Age}`;
+// }
+
+// let user : User =
+// {
+//     firstName : "Sanajrbek",
+//     lastName : "Berdikulov",
+//     Age : 17,
+//     phoneNumber : "+998900074272",
+// }
+
+// console.log(GetFullInfo(user));
+
+
+
+
+
+interface IUser {
+    firstName: string,
+    lastName: string,
     phoneNumber: string,
-    Age : number
+    Age: number
+}
+
+interface IPerson extends IUser {
+    address: string,
 }
 
 
-function GetFullInfo(user : User) : string
+let person: IPerson =
 {
-    return `FirstName : ${user.firstName}\nLastName: ${user.lastName}\nPhoneNumber: ${user.phoneNumber}\nAge: ${user.Age}`;
+    firstName: "Sanjarbek",
+    lastName: "Berdikulov",
+    Age: 17,
+    phoneNumber: "900074272",
+    address: "Bekobod",
 }
 
-let user : User = 
-{
-    firstName : "Sanajrbek",
-    lastName : "Berdikulov",
-    Age : 17,
-    phoneNumber : "+998900074272",
+function getPersonInfo(person: IPerson): string {
+    return `FirstName : ${person.firstName}\nLastName: ${person.lastName}\nPhoneNumber: ${person.phoneNumber}\nAge: ${person.Age}\nAddress: ${person.address}`;
 }
 
-console.log(GetFullInfo(user));
+console.log(getPersonInfo(person));
