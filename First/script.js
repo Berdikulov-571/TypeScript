@@ -116,6 +116,18 @@
 // let names : Array<string> = ["Sanjarbek","Alisher","Almatov"];
 // names[0] = "jonibek";
 // Tuple
-var user = ["Sanjarbek", 17];
-var obj = ["Sanjarbek", 2, 3, 4, 5, 6];
-console.log(obj);
+// let user: [string, number] = ["Sanjarbek", 17];
+// let obj: [string, ...number[]] = ["Sanjarbek", 2, 3, 4, 5, 6];
+// console.log(obj);
+// Created class and function and take object
+var Person = /** @class */ (function () {
+    function Person(firstName, lastName) {
+        this._firstName = firstName;
+        this._lastName = lastName;
+    }
+    Person.prototype.GetFullInfo = function () {
+        return "FirstName : ".concat(this._firstName, "\nLastName : ").concat(this._lastName);
+    };
+    return Person;
+}());
+var person = new Person("Sanjarbek", "Berdikulov");
