@@ -147,3 +147,10 @@
 //       return a + b;
 //     }
 // }
+// Method overload
+function sum(x, y) {
+    return x + y;
+}
+function sum(x, y, z) {
+    return x + y + z;
+}
