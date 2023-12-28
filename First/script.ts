@@ -229,15 +229,17 @@
 
 
 // Implement
-// interface Adder 
-// {
+// interface Adder {
 //     sum(x: number, y: number): number;
 // }
-  
-// class Calculator implements Adder 
-// {
-//     sum(a: number, b: number): number 
-//     {
-//       return a + b;
+
+// interface Adder2 {
+//     sum(x: number, y: number): number;
+// }
+
+
+// class Calculator implements Adder, Adder2 {
+//     sum(a: number, b: number): number {
+//         return a + b;
 //     }
 // }
